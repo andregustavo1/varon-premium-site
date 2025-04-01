@@ -37,18 +37,18 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-black">
+    <section id="services" className="py-20 bg-white text-black">
       <div className="varon-container" ref={ref}>
-        <h2 className="section-title">Serviços Premium</h2>
+        <h2 className="section-title text-black">Serviços Premium</h2>
         
         <div className="space-y-8 mt-12">
           {services.map((service, index) => (
             <div 
               key={service.title}
-              className={`flex flex-col md:flex-row gap-6 p-6 border border-varon-silver/20 rounded-lg hover:border-varon-gold/50 transition-all duration-300 ${inView ? 'animate-slide-up' : 'opacity-0'}`}
+              className={`flex flex-col md:flex-row gap-6 p-6 border border-gray-200 rounded-lg hover:border-varon-gold/50 shadow-sm transition-all duration-300 ${inView ? 'animate-slide-up' : 'opacity-0'}`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="flex-shrink-0 bg-black p-4 rounded-full border border-varon-gold/50 mx-auto md:mx-0">
+              <div className="flex-shrink-0 bg-gray-100 p-4 rounded-full border border-varon-gold/50 mx-auto md:mx-0">
                 {service.icon}
               </div>
               
@@ -56,7 +56,7 @@ const ServicesSection = () => {
                 <h3 className="text-xl font-semibold mb-2 text-varon-gold text-center md:text-left">
                   {service.title}
                 </h3>
-                <p className="text-varon-silver text-center md:text-left">
+                <p className="text-gray-700 text-center md:text-left">
                   {service.description}
                 </p>
               </div>

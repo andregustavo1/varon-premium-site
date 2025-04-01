@@ -69,9 +69,9 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-black">
+    <section id="contact" className="py-20 bg-white text-black">
       <div className="varon-container" ref={ref}>
-        <h2 className="section-title">Visite Nossa Barbearia</h2>
+        <h2 className="section-title text-black">Visite Nossa Barbearia</h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-12">
           <div className={`space-y-6 ${inView ? 'animate-slide-up' : 'opacity-0'}`}>
@@ -79,19 +79,19 @@ const ContactSection = () => {
               <button 
                 key={item.title}
                 onClick={item.action}
-                className="flex items-center gap-4 w-full p-4 border border-varon-silver/20 rounded-lg hover:border-varon-gold transition-all duration-300"
+                className="flex items-center gap-4 w-full p-4 border border-gray-200 rounded-lg hover:border-varon-gold transition-all duration-300 shadow-sm"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className="flex-shrink-0">{item.icon}</div>
                 <div className="text-left">
-                  <h3 className="text-varon-silver font-medium">{item.title}</h3>
+                  <h3 className="text-gray-700 font-medium">{item.title}</h3>
                   <p className="text-varon-gold">{item.text}</p>
                 </div>
               </button>
             ))}
           </div>
           
-          <div className={`rounded-lg overflow-hidden border border-varon-silver/20 h-[400px] ${inView ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
+          <div className={`rounded-lg overflow-hidden border border-gray-200 shadow-md h-[400px] ${inView ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30740.350365832347!2d-48.03346120507812!3d-15.839620000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3367273fd44f%3A0x9f00381ac4acd0b7!2s%C3%81guas%20Claras%2C%20Bras%C3%ADlia%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1690558303307!5m2!1spt-BR!2sbr"
               width="100%"

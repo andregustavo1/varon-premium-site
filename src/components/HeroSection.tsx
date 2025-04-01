@@ -11,7 +11,7 @@ const HeroSection = () => {
       id="hero" 
       className="min-h-screen relative flex items-center justify-center pt-16"
       style={{
-        backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://images.unsplash.com/photo-1521490683473-9a9bcd5c2579?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80")',
+        backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/lovable-uploads/12093e07-d6dc-48f4-a174-4f06639db5fd.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'

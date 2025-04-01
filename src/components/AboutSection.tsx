@@ -33,9 +33,9 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-black">
+    <section id="about" className="py-20 bg-white text-black">
       <div className="varon-container" ref={ref}>
-        <h2 className="section-title animate-fade-in">A Excelência da Varón Barbearia</h2>
+        <h2 className="section-title text-black animate-fade-in">A Excelência da Varón Barbearia</h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
           <div className={`relative rounded-lg overflow-hidden ${inView ? 'animate-fade-in' : 'opacity-0'}`}>
@@ -48,10 +48,10 @@ const AboutSection = () => {
           </div>
           
           <div>
-            <p className={`text-lg mb-8 text-varon-silver leading-relaxed ${inView ? 'animate-slide-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
+            <p className={`text-lg mb-8 text-gray-700 leading-relaxed ${inView ? 'animate-slide-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
               Na Varón Barbearia, elevamos os cuidados masculinos a um novo patamar, combinando técnicas tradicionais com abordagens contemporâneas. Nosso espaço foi concebido para proporcionar uma experiência completa de bem-estar e estilo, onde cada detalhe foi cuidadosamente pensado para sua satisfação e conforto.
             </p>
-            <p className={`text-lg mb-8 text-varon-silver leading-relaxed ${inView ? 'animate-slide-up' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
+            <p className={`text-lg mb-8 text-gray-700 leading-relaxed ${inView ? 'animate-slide-up' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
               Acreditamos que o verdadeiro luxo está nos detalhes, no atendimento personalizado e na excelência dos serviços. Nossa missão é transformar uma necessidade rotineira em uma experiência memorável que renova não apenas sua aparência, mas também seu bem-estar.
             </p>
             
@@ -62,13 +62,13 @@ const AboutSection = () => {
                   className={`${inView ? 'animate-slide-up' : 'opacity-0'}`} 
                   style={{ animationDelay: `${0.6 + (index * 0.2)}s` }}
                 >
-                  <div className="icon-container">
+                  <div className="icon-container bg-gray-100">
                     {feature.icon}
                   </div>
                   <h3 className="text-lg font-semibold mb-2 text-varon-gold text-center">
                     {feature.title}
                   </h3>
-                  <p className="text-sm text-varon-silver text-center">
+                  <p className="text-sm text-gray-600 text-center">
                     {feature.description}
                   </p>
                 </div>
