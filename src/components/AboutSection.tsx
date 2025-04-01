@@ -40,8 +40,8 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
           <div className={`relative rounded-lg overflow-hidden ${inView ? 'animate-fade-in' : 'opacity-0'}`}>
             <img 
-              src="https://images.unsplash.com/photo-1589985270958-ad4b0a0fe6ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" 
-              alt="Interior da Varón Barbearia" 
+              src="/lovable-uploads/509710dd-8247-43b4-99ca-a8314f5825ea.png" 
+              alt="Profissional da Varón Barbearia em ação" 
               className="w-full h-auto object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>

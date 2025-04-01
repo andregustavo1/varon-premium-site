@@ -48,7 +48,7 @@ const ServicesSection = () => {
               className={`flex flex-col md:flex-row gap-6 p-6 border border-gray-200 rounded-lg hover:border-varon-gold/50 shadow-sm transition-all duration-300 ${inView ? 'animate-slide-up' : 'opacity-0'}`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="flex-shrink-0 bg-gray-100 p-4 rounded-full border border-varon-gold/50 mx-auto md:mx-0">
+              <div className="flex-shrink-0 bg-gray-100 p-4 rounded-full border border-varon-gold/50 mx-auto md:mx-0 w-16 h-16 flex items-center justify-center">
                 {service.icon}
               </div>
               
